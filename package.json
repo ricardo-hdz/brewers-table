@@ -1,0 +1,35 @@
+{
+  "name": "brewers-table",
+  "version": "1.0.0",
+  "description": "An Amazon Alexa skill to provide suggestions of beer and food pairings and related information",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardo-hdz/brewers-table"
+  },
+  "keywords": [
+    "amazon",
+    "alexa",
+    "skill",
+    "beer",
+    "craft-beer",
+    "food",
+    "pairings"
+  ],
+  "author": "Ricardo Hdz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardo-hdz/brewers-table/issues"
+  },
+  "homepage": "https://github.com/ricardo-hdz/brewers-table",
+  "dependencies": {
+    "alexa-app": "^2.3.4",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3"
+  }
+}
