@@ -5,7 +5,7 @@ var alexa = require('alexa-app');
 var app = new alexa.app('brewers-table');
 var PairingsHelper = require('./pairings_helper');
 
-var SLOT_NAME = 'BEER_STYLE';
+var SLOT_NAME = 'Style';
 
 app.launch(function(req, res) {
 	var prompt = 'For pairing suggestions, tell me a beer style.';
@@ -15,14 +15,14 @@ app.launch(function(req, res) {
 app.intent('beerpairings',
 	{
 		'slots': {
-			'BEER_STYLE': 'KNOWN_BEER_STYLES'
+			'Style': 'KNOWN_BEER_STYLES'
 		},
 		'utterances': [
-			'{|pairings} {|for} {-|BEER_STYLE}',
-			'{|what goes} with {-|BEER_STYLE}',
-			'suggestions {|with|for} {-|BEER_STYLE}',
-			'suggest me {|pairings|food} {|for|with} {-|BEER_STYLE}',
-			'pair {|my} {-|BEER_STYLE}'
+			'{|pairings} {|for} {-|Style}',
+			'{|what goes} with {-|Style}',
+			'suggestions {|with|for} {-|Style}',
+			'suggest me {|pairings|food} {|for|with} {-|Style}',
+			'pair {|my} {-|Style}'
 		]
 	},
 	function(req, res) {

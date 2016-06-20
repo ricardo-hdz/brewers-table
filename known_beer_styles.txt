@@ -1,0 +1,54 @@
+kolsh
+cream ale
+blonde ale
+brittish-style bitter
+bsb
+pale ale
+india pale ale
+ipa
+double india pale ale
+imperial india pale ale
+double ipa
+imperial ipa
+amber ale
+red ale
+scotch ale
+wee heavy
+brown ale
+altbier
+abbey dubbel
+dubbel
+abbey tripel0
+tripel0
+strong golden ale0
+strong ale
+old ale
+barleywine
+porter
+stout
+dry stout
+sweet stout
+oatmeal stout
+milk stout
+imperial stout
+hefeweizen
+american wheat ale
+wheat ale
+witbier
+dunkelweizen0
+weizenbock
+pilsener
+pils
+helles
+dortmunder
+oktoberfest
+marzen
+vienna
+amber lager
+amber
+dark lager
+dunkel
+schwarzbier
+maibock
+pale bock
+doppelbock

@@ -1,0 +1,14 @@
+# Short
+An Amazon Alexa app to discover new food pairings to enjoy your beer.
+
+# Full Skill
+This Alexa app helps you to find suggestions to appropriate dishes, cheeses and desserts with your favorite beer.
+
+It includes a comprehensive list of beer styles, from an Abbey Dubbel and Amber Ale to Weizenbock and Vienna. For each beer, a suggested list of prepared dishes, cheeses and dessert is provided.
+
+Simply say:
+"Alexa, open brewers table"
+"Alexa, ask brewers table what goes with Kolsh"
+"Alexa, ask brewers table suggestions for India Pale Ale"
+
+"Alexa, aks brewers table for Weizenbock"
