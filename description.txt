@@ -12,3 +12,5 @@ Simply say:
 "Alexa, ask brewers table suggestions for India Pale Ale"
 
 "Alexa, aks brewers table for Weizenbock"
+
+## Disclaimer

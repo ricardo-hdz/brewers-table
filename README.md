@@ -8,6 +8,11 @@ It includes a comprehensive list of beer styles, from an Abbey Dubbel and Amber 
 
 Prost!
 
+#### Disclaimer
+The content of this skill is rated 17+ for the following:
+Unrestricted Web Access
+Frequent/Intense Alcohol References
+
 ### Example
 ```
 "Alexa, open brewers table"

@@ -1,3 +1,4 @@
+/*global require */
 'use strict';
 
 var _ = require('lodash');
@@ -7,10 +8,30 @@ var PairingsHelper = require('./pairings_helper');
 
 var SLOT_NAME = 'Style';
 
-app.launch(function(req, res) {
-	var prompt = 'For pairing suggestions, tell me a beer style.';
+var defaultIntentHandler = function(req, res) {
+	var prompt = 'For pairing suggestions, please tell me a beer style.';
 	res.say(prompt).reprompt(prompt).shouldEndSession(false);
+};
+
+var defaultExitHandler = function(req, res) {
+	res.say('Good bye! Enjoy your beer!').shouldEndSession(false);
+};
+
+app.launch(defaultIntentHandler);
+
+app.intent('AMAZON.StartOverIntent', defaultIntentHandler);
+app.intent('AMAZON.RepeatIntent', defaultIntentHandler);
+
+app.intent('AMAZON.HelpIntent', function(req, res) {
+	var prompt = 'I can help you to find a great pairing for your beer.<break strength="strong"/>' +
+		'For example, you can ask me:<break strength="medium"/> pairings for Red Ale.' +
+		'<break strength="strong"/>What style of beer do you want to pair?';
+	var reprompt = 'Please tell me a beer style so I can help you with food, cheese and dessert pairings.';
+	res.say(prompt).reprompt(reprompt).shouldEndSession(false);
 });
+
+app.intent('AMAZON.StopIntent', defaultExitHandler);
+app.intent('AMAZON.CancelIntent', defaultExitHandler);
 
 app.intent('beerpairings',
 	{
