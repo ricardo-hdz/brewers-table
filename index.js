@@ -14,7 +14,7 @@ var defaultIntentHandler = function(req, res) {
 };
 
 var defaultExitHandler = function(req, res) {
-	res.say('Good bye! Enjoy your beer!').shouldEndSession(false);
+	res.say('Good bye! Enjoy your beer!').shouldEndSession(true);
 };
 
 app.launch(defaultIntentHandler);
